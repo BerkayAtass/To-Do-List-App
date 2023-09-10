@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+</head>
+<body>
+    
+ <div class="container">
+    <div class="box">
+        <!------------------ To Do List Box --------------------->
+        <div class="box-ToDoList" id="ToDoList">
+
+            <div class="top-header">
+                <h3>To Do List</h3>
+            </div>
+
+            <div class="search-group">
+                <div class="search-field">
+                    <input type="text" class="search-box" id="newToDoTitle" required>
+                    <label for="newToDoTitle">Search To Do</label>
+                    <!--   <input type="submit" class="search-submit" value="search"> -->
+                </div>
+            </div>
+
+
+            <ol class="to-do-list">
+            <!--
+            <li class="list">
+                <div class="list-field">
+                    <strong class="list-field" >Half-Life 2</strong>
+                    <p>Fight aliens, wear a head crab, learn about gravity</p>
+                    <br>
+                    <div>
+                        <button type="submit" class="editbutton">edit</button>
+                        <button type="submit" class="deletebutton">delete</button>
+                    </div>
+                </div>
+                <br>
+                
+            </li>
+            -->
+            </ol>
+                        
+
+        </div>
+
+     <!-------------------- Add New To Do Box--------------------------->
+    
+     <div class="box-AddNewToDo" id="AddNewToDo">
+
+        <div class="top-header">
+           <h3>Add New To Do</h3>
+        </div>
+        <form id="todoForm">
+
+            <div class="input-group">
+                <div class="input-field">
+                    <input type="text" class="input-box" id="newToDoTitle" required>
+                    <label for="newToDoTitle">To Do Title</label>
+                </div>
+                <div class="input-field">
+                    <textarea type="text" class="input-box-area" id="newToDoInfo" required></textarea>
+                    <label for="newToDoInfo">To Do Info</label>
+                </div>
+                    <div class="input-field">
+                        <button id="todoAdd" type="submit" class="input-submit">Add</button>
+                </div>
+                <br>
+            </div>
+        </form> 
+        <!---
+        <div class="alert alert-success">
+            <strong>Success!</strong> Indicates a successful or positive action.
+        </div>
+      -->
+   </div>
+    <!------------------------ Switch -------------------------->
+      
+    <div class="switch">
+        <a href="#" class="todoScreen" onclick="todosPage()">To Do List</a>
+        <a href="#" class="addToDoScreen" onclick="AddTodoPage()">Add New To Do</a>
+        <div class="btn-active" id="btn"></div>
+    </div>
+
+    </div>
+ </div>
+<script src="app.js"></script>
+</body>
+</html>
