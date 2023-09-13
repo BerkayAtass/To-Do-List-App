@@ -1,4 +1,4 @@
-# To-Do-List
+# To-Do-List-App
 JavaScript based to do list application
 
 
